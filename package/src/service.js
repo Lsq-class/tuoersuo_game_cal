@@ -53,8 +53,8 @@ const myserver = myhttp.createServer((req, res) => {
             // const params = getUrlParams(url?.split("?")[1]);
             // console.log(params, "imgage");
             const request = require('request')
-            const AK = "EareBU79MZ7n9T5EQhbUmfhQ"
-            const SK = "teNgyues8xniQrDpRQEsr6qLMhk21cZB"
+            const AK = ""  //百度接口ak
+            const SK = "" //百度接口sk
 
             async function main() {
                 const options = {
@@ -108,31 +108,6 @@ const myserver = myhttp.createServer((req, res) => {
 myserver.listen(prot, hostName, function () {
     console.log(`server running.... at ${hostName}:${prot}`)
 })
-//通过http的的listen方法去监听服务器运行，这里console.log的内容可以不用顾虑，只是模板字符串的变量引入，不作讲解
-
-function getUrlParams(queryString) {
-    const urlParams = {};
-    // const queryString = window.location.search.substr(1);
-    const paramPairs = queryString.split('&');
-
-    paramPairs.forEach(pair => {
-        const [key, value] = pair.split('=');
-        const decodedKey = decodeURIComponent(key);
-        const decodedValue = decodeURIComponent(value);
-
-        if (urlParams.hasOwnProperty(decodedKey)) {
-            if (Array.isArray(urlParams[decodedKey])) {
-                urlParams[decodedKey].push(decodedValue);
-            } else {
-                urlParams[decodedKey] = [urlParams[decodedKey], decodedValue];
-            }
-        } else {
-            urlParams[decodedKey] = decodedValue;
-        }
-    });
-
-    return urlParams;
-}
 
 function getFileContentAsBase64(path) {
     const fs = require('fs');

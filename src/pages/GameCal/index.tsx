@@ -1720,20 +1720,6 @@ export function Web() {
     return (
 
         <>
-            {/* <div className="App">
-                {data?.map((items: any) => {
-                    return <div className="line-div">
-                        {
-                            items?.map((element: any) => <div className={element?.isSumTenArea ? "red" : ""} style={{ color: element?.color }}>
-                                {element?.value}
-                            </div>)
-                        }
-                    </div>
-                })}
-
-            </div> */}
-            {/* {console.log(allData, "input")} */}
-
             {allData?.map((mains: any) => <div className="App">
                 {mains?.map((items: any) => {
                     return <div className="line-div">
@@ -1745,19 +1731,6 @@ export function Web() {
                     </div>
                 })}
             </div>)}
-            {/* <div className="App">
-                {matrixValue && <>
-                    {matrixValue?.map((items: any) => {
-                        return <div className="line-div">
-                            {
-                                items?.map((element: any) => <div className={element?.isSumTenArea ? "red" : ""} style={{ color: element?.color }}>
-                                    {element?.value}
-                                </div>)
-                            }
-                        </div>
-                    })}
-                </>}
-            </div> */}
         </>
     )
 }

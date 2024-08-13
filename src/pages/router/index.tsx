@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import {lazy} from "react";
  
-const Home = lazy(() => import("../Web")) 
-const Test = lazy(() => import("../Test")) 
+// const Home = lazy(() => import("../Web")) 
+// const Test = lazy(() => import("../Test")) 
 const GameCal = lazy(() => import("../GameCal")) 
  
 function RootRoute() :JSX.Element{
@@ -10,8 +10,8 @@ function RootRoute() :JSX.Element{
     <>
       <Routes>
         <Route path="/" element={<GameCal />} />
-        <Route path="/test" element={<Test />} />
-        <Route path="/api" element={<Home />} />
+        {/* <Route path="/test" element={<Test />} />
+        <Route path="/api" element={<Home />} /> */}
       </Routes>
     </>
   );
