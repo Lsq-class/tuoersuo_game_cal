@@ -1,0 +1,76 @@
+{
+  "name": "gis_page",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "dev": "vite",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "postinstall": "symlink-dir node_modules/cesium/Build/Cesium public/cesium"
+  },
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@hot-loader/react-dom": "^17.0.2",
+    "@react-pdf/renderer": "^3.4.0",
+    "@storybook/addon-actions": "^7.6.7",
+    "@storybook/react": "^7.6.7",
+    "alova": "^2.20.3",
+    "axios": "^1.6.8",
+    "cesium": "^1.112.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "craco-cesium": "^1.2.0",
+    "craco-plugin-react-hot-reload": "^0.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "html-webpack-tags-plugin": "^3.0.2",
+    "html2canvas": "^1.4.1",
+    "insert-css": "^2.0.0",
+    "node-fetch": "2",
+    "path2d-polyfill": "^3.0.1",
+    "pdfjs": "^2.5.3",
+    "pdfjs-dist": "^3.11.174",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-loader": "^4.13.1",
+    "react-pdf": "^7.7.1",
+    "react-scripts": "^5.0.1",
+    "reactflow": "^11.10.1",
+    "request": "^2.88.2",
+    "resium": "^1.17.2",
+    "shadowsocks": "^1.5.3",
+    "shadowsocks-js": "^1.2.1",
+    "storybook": "^7.6.7",
+    "vite-plugin-top-level-await": "^1.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "react-router-dom": "6",
+    "sass": "^1.72.0",
+    "symlink-dir": "^5.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-cesium": "^1.2.22"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  
+  "main": "service.js"  ,
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "querystring": "^0.2.1",
+    "request": "^2.88.2"
+  }
+}

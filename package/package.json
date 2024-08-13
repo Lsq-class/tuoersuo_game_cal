@@ -1,0 +1,22 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "lsq",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "node_service"
+  },
+  "description": "",
+  "dependencies": {
+    "amd": "^0.0.0",
+    "cmd": "^0.1.0",
+    "es6": "^0.0.7",
+    "http": "^0.0.1-security"
+  }
+}
